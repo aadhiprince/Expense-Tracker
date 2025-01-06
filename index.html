@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="header">Expense Tracker</h1>
+  <div id="container">
+  <div id="input-container">
+    <div>
+    <label for="">Description :</label>
+    <input type="text" placeholder="Enter here..." id="Description">
+    </div>
+    <div>
+      <label for="">Income/Expenses : </label>
+      <select name="" id="select">
+      <option value="income">INCOMES</option>
+      <option value="expenses">EXPENSES</option>
+    </select>
+    </div>
+    <div>
+      <label for="">Amount :</label>
+      <input type="text" placeholder="Enter amount..." id="amount">
+    </div>
+    <button id="save-button">Save</button>
+  </div>
+  <div id="save-error">Please fill all fields</div>
+  <hr>
+  <div id="balance-container">
+    <div>Incomes $ <span id="incomes"> 0</span></div>
+    <div>Expenses $ <span  id="expenses"> 0</span></div>
+    <div>Balance $ <span id="balance"> 0</span></div>
+  </div>
+  
+  
+</div>
+  <div id="table-container">
+  <table id="mytable">
+    <thead class="th">
+    <tr>
+      <th>Description</th>
+      <th>Amount</th>
+      <th>Income/Expenses</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+  
+  </table>
+  
+  
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

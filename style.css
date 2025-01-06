@@ -1,0 +1,170 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+#input-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 30px;
+    height: 30px;
+    padding: 20px;
+
+}
+#container{
+
+background-color: rgb(219, 243, 227);
+}
+.header{
+    text-align: center;
+}
+#input-container input , select {
+    padding: 7px;
+    border-radius: 5px;
+}
+select{
+    width: 200px;
+}
+#input-container label , button{
+    font-size: large;
+}
+#balance-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 50px;
+    font-size: large;
+    font-weight: 800;
+}
+#balance-container div {
+    font-size: large;
+    margin: 20px;
+}
+table ,td , th {
+     border: 1px solid black;
+     border-collapse: collapse;
+     margin: 30px;
+     padding: 20px;
+     text-align: center;
+    
+}
+table , tr {
+    width: 75%;
+}
+#table-container{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+#save-error{
+    display: none;
+    text-align: center;
+    font-size: large;
+    color: red;
+}
+#incomes{
+    color: green;
+}
+#expenses{
+    color: rgb(136, 59, 59)
+}
+#balance{
+    color: blue;
+}
+label{
+    font-size: large;
+    font-weight: bold;
+}
+#save-button{
+    background-color: rgb(30, 235, 108);
+    color: black;
+    border-radius: 5px;
+    width: 10%;
+    padding: 4px;
+}
+#save-button:hover{
+    opacity: 0.7;
+}
+.th{
+    background-color: rgb(115, 147, 212);
+}
+td {
+    background-color: rgb(187, 235, 235);
+}
+tr:nth-child(even){
+    background-color: rgb(226, 217, 117);
+}
+tr{
+    font-weight: bold;
+}
+@media (max-width: 727px) {
+    body{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    #input-container,#container , #balance-container{
+        background-color: bisque;
+    }
+    #input-container{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30%;
+        text-align: center;
+        margin-bottom: 30%;
+    }
+    input , select {
+        width: 240px;
+        text-align: center;
+        border-radius: 7px;
+    }
+    select{
+        width: 260px;
+    }
+    #save-button{
+        width: 70%;
+    }
+    #balance-container{
+        gap: 10px;
+        width: 80%;
+        margin: 20px;
+    }
+    #balance-container div{
+        display: inline-block;
+    }
+    #table-container {
+        overflow-x: auto; 
+        width: 100%; 
+        padding: 10px; 
+        margin: 0 auto; 
+        max-width: 95%; 
+      }
+    
+      table {
+        width: 100%; 
+        max-width: 100%; 
+        margin: 0 auto; 
+        font-size: 14px; 
+        border-collapse: collapse; 
+      }
+    
+      td , th {
+        padding: 10px; 
+        white-space: nowrap; 
+        border: 1px solid black; 
+      }
+      tr:nth-child(even){
+        background-color: rgb(241, 238, 205);
+    }
+   tbody td{
+    background-color: rgb(226, 155, 68);
+   }
+   
+}
